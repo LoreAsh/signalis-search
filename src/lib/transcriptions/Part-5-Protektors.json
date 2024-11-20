@@ -23,22 +23,8 @@
 		"title": "Buyan",
 		"slug": "Buyan",
 		"part": "Protektors",
-		"place": ["STCR Dorm"],
+		"place": ["STCR Dorm(B6)"],
 		"text": ["Buyan will burn!"]
-	},
-	{
-		"title": "Operational Procedures: Control",
-		"slug": "Operational-Procedures:-Control",
-		"part": "Protektors",
-		"place": ["Service Tunnel"],
-		"text": [
-			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\nAEON-Guideline 176 for the deployment of Operational Procedures:\nOperational Psychology\nIn order to reliably protect the safety of our Nation, AEON must develop and deploy procedures and technologies to maintain complete control over all Replikas in service of the Nation.\nJust like with Gestalts, procedures involving Operational Psychology are highly effective for behavior control of Replikas. ",
-			"The primary advantage of Replikas over Gestalts is predictability.\n All newly deployed Replikas of a model are virtually identical both physically and psychologically.\n As they all share the same memories, under the same circumstances, a newly deployed Eule Unit will practically always react in the exact same way. ",
-			"However, as soon as a Unit encounters new situations, it will begin to deviate from the original pattern. In some cases, this may lead to the Unit being less efficient for its intended purpose. This is called Persona degradation.",
-			"Using a wealth of private information about the life of the Gestalt each neural pattern is based on allows us to ensure optimal, uniform post-deployment development of each unit. In simpler terms, our primary objective is the focused manipulation of the individual to ensure they remain as close to the original pattern as possible, and thus productive, loyal and docile for as long as possible.",
-			"This is called Persona stabilization. Stabilization can come in many forms, and usually takes on the form of regular activities or Fetish Objects that distract and calm the Replika.",
-			"Until the development of Bioresonance Technology that allows wide-scale direct behavior control, the methods of Operational Psychology still remain the most reliable way to control both Replikas and Gestalts in the interest of the protection of national security. "
-		]
 	},
 	{
 		"title": "Memorandum: Lighting Malfunctions",
@@ -136,6 +122,30 @@
 		"text": [
 			"@Einfache universelle Leichte Replika@\n - 'Eule' -\n (Simple Universal Light Replika 'Owl')\n Type: Generation 4 Low-Cost General Purpose\n Frame: Biomechanical with Polyethylene Shell\n Height: 175 cm",
 			"EULR units are the backbone of the Eusan Nation's workforce.\n These elegant multi-purpose worker units are suited for all kinds of domestic tasks like cleaning, cooking and simple medical and office work. Eules are highly social and get along well with each other as well as most other Replika models.\n While unfit for combat, their lightweight frame makes them a prime choice for distant facilities where supplies are limited."
+		]
+	},
+	{
+		"title": "Replika Overview: STCR",
+		"slug": "Replika-Overview:-STCR",
+		"part": "Protektors",
+		"place": ["STCR Dorm"],
+		"text": [
+			"@Sicherheitstechniker-Controller-Replika@\n- 'Storch' -\n(Security Technician Controller Replika 'Stork')\nType: Generation 5 Combat Lead Unit\nFrame: Biomechanical with Polyethylene Shell and Bullet-Resistant Armor Plating\nHeight: 240 cm",
+			"Each Cadre of Protektor Security Technicians is overseen by a Controller Unit, the most common of which is the STCR \"Stork\" Type. One of the tallest Replika models thanks to their extended legs, Storks figuratively and literally keep a constant birds-eye view of any situation, ready to direct and coordinate their assigned Security Technicians. Their tough, no-nonsense demeanor, though sometimes described as brutal and even cruel, makes them the perfect fit as unwavering sentinels of order."
+		]
+	},
+	{
+		"title": "Operational Procedures: Control",
+		"slug": "Operational-Procedures:-Control",
+		"part": "Protektors",
+		"place": ["Service Tunnel"],
+		"text": [
+			"#- @CLASSIFIED INFORMATION@ - Commander Eyes Only -\nAEON-Guideline 176 for the deployment of Operational Procedures:\nOperational Psychology\nIn order to reliably protect the safety of our Nation, AEON must develop and deploy procedures and technologies to maintain complete control over all Replikas in service of the Nation.\nJust like with Gestalts, procedures involving Operational Psychology are highly effective for behavior control of Replikas. ",
+			"The primary advantage of Replikas over Gestalts is predictability.\n All newly deployed Replikas of a model are virtually identical both physically and psychologically.\n As they all share the same memories, under the same circumstances, a newly deployed Eule Unit will practically always react in the exact same way. ",
+			"However, as soon as a Unit encounters new situations, it will begin to deviate from the original pattern. In some cases, this may lead to the Unit being less efficient for its intended purpose. This is called Persona degradation.",
+			"Using a wealth of private information about the life of the Gestalt each neural pattern is based on allows us to ensure optimal, uniform post-deployment development of each unit. In simpler terms, our primary objective is the focused manipulation of the individual to ensure they remain as close to the original pattern as possible, and thus productive, loyal and docile for as long as possible.",
+			"This is called Persona stabilization. Stabilization can come in many forms, and usually takes on the form of regular activities or Fetish Objects that distract and calm the Replika.",
+			"Until the development of Bioresonance Technology that allows wide-scale direct behavior control, the methods of Operational Psychology still remain the most reliable way to control both Replikas and Gestalts in the interest of the protection of national security. "
 		]
 	},
 	{
