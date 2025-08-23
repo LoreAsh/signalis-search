@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function Breadcrumbs() {
@@ -29,9 +30,9 @@ export default function Breadcrumbs() {
 		<ol className="w-full m-auto flex max-w-4xl p-4 pt-4 gap-3 text-sm sm:text-base sm:pt-10" aria-label="Breadcrumb">
 			{home ? (
 				<li key='home'>
-					<a href="/" className="text-primary-blue hover:underline hover:text-primary-blue-hover focus:text-primary-blue-hover focus:underline">
+					<Link href="/" className="text-primary-blue hover:underline hover:text-primary-blue-hover focus:text-primary-blue-hover focus:underline">
 						Home
-					</a>
+					</Link>
 				</li>
 			) : null}
 			{culledPathnames.map((name, index) => {
@@ -41,12 +42,12 @@ export default function Breadcrumbs() {
 							&gt;
 						</span>
 						{index !== culledPathnames.length - 1 ? (
-							<a
+							<Link
 								href={`/${culledPathnames.slice(0, index + 1).join('/')}`}
 								className="text-primary-blue capitalize hover:underline hover:text-primary-blue-hover w-fit"
 							>
 								{name}
-							</a>
+							</Link>
 						) : (
 							<span className="capitalize font-light text-white/80 underline">{name}</span>
 						)}

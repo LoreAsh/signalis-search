@@ -1,6 +1,6 @@
 export default function Poem() {
 	return (
-		<p className='text-base sm:text-norm font-extralight'>
+		<p className='text-base leading-[1.5rem] sm:text-norm font-extralight'>
 			<span className="fly-right-fade block" style={{ animationDelay: '150ms' }}>
 				Along the shore the cloud waves break,
 				<br />

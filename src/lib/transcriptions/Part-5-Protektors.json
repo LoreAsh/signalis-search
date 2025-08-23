@@ -11,7 +11,7 @@
 	},
 	{
 		"title": "Replika Overview: STAR",
-		"slug": "Replika-Overview:-STAR",
+		"slug": "Replika-Overview-STAR",
 		"part": "Protektors",
 		"place": ["Cleaning Room"],
 		"text": [
@@ -28,7 +28,7 @@
 	},
 	{
 		"title": "Memorandum: Lighting Malfunctions",
-		"slug": "Memorandum:-Lighting-Malfunctions",
+		"slug": "Memorandum-Lighting-Malfunctions",
 		"part": "Protektors",
 		"place": ["Cleaning Room Hallway"],
 		"text": [
@@ -39,7 +39,7 @@
 	},
 	{
 		"title": "Replika Overview: ARAR",
-		"slug": "Replika-Overview:-ARAR",
+		"slug": "Replika-Overview-ARAR",
 		"part": "Protektors",
 		"place": ["ARAR Dorm"],
 		"text": [
@@ -84,7 +84,7 @@
 	},
 	{
 		"title": "Replika Overview: FKLR",
-		"slug": "Replika-Overview:-FKLR",
+		"slug": "Replika-Overview-FKLR",
 		"part": "Protektors",
 		"place": ["FKLR Study"],
 		"text": [
@@ -106,7 +106,7 @@
 	},
 	{
 		"title": "Replika Overview: ADLR",
-		"slug": "Replika-Overview:-ADLR",
+		"slug": "Replika-Overview-ADLR",
 		"part": "Protektors",
 		"place": ["ADLR Bedroom"],
 		"text": [
@@ -116,7 +116,7 @@
 	},
 	{
 		"title": "Replika Overview: EULR",
-		"slug": "Replika-Overview:-EULR",
+		"slug": "Replika-Overview-EULR",
 		"part": "Protektors",
 		"place": ["Piano Room"],
 		"text": [
@@ -126,7 +126,7 @@
 	},
 	{
 		"title": "Replika Overview: STCR",
-		"slug": "Replika-Overview:-STCR",
+		"slug": "Replika-Overview-STCR",
 		"part": "Protektors",
 		"place": ["STCR Dorm"],
 		"text": [
@@ -136,7 +136,7 @@
 	},
 	{
 		"title": "Operational Procedures: Control",
-		"slug": "Operational-Procedures:-Control",
+		"slug": "Operational-Procedures-Control",
 		"part": "Protektors",
 		"place": ["Service Tunnel"],
 		"text": [
@@ -200,7 +200,7 @@
 	},
 	{
 		"title": "Replika Overview: KLBR",
-		"slug": "Replika-Overview:-KLBR",
+		"slug": "Replika-Overview-KLBR",
 		"part": "Protektors",
 		"place": ["KLBR Study"],
 		"text": [
@@ -242,7 +242,7 @@
 	},
 	{
 		"title": "Replika Overview: LSTR",
-		"slug": "Replika-Overview:-LSTR",
+		"slug": "Replika-Overview-LSTR",
 		"part": "Protektors",
 		"place": ["ADLR Study"],
 		"text": [
@@ -252,7 +252,7 @@
 	},
 	{
 		"title": "Replika Overview: MNHR",
-		"slug": "Replika-Overview:-MNHR",
+		"slug": "Replika-Overview-MNHR",
 		"part": "Protektors",
 		"place": ["Library"],
 		"text": [
