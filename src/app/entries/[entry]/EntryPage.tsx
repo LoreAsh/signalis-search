@@ -46,7 +46,7 @@ export default function EntryPage({ text }: { text: { __html: string }[] }) {
 				ref={ref}
 				className={`${
 					direction === 'right' ? 'fly-right-fade' : 'fly-left-fade'
-				} mb-12	min-h-[13rem] w-full max-w-[51rem] whitespace-pre-line text-base leading-7 sm:mt-12 sm:text-norm`}
+				} mb-12	min-h-52 w-full max-w-204 whitespace-pre-line text-base leading-7 sm:mt-12 sm:text-norm`}
 				style={{ animationDelay: '100ms' }}
 				dangerouslySetInnerHTML={text[page]}
 			></p>

@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { tokenize } from '@/lib/tokenize';
 import { notFound } from 'next/navigation';
 
-type Props = { params: { entry: string } };
+type Props = { params: Promise<{ entry: string }> };
 
 export const dynamic = 'force-static';
 
@@ -14,7 +14,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-	const entry = getEntry(params.entry);
+	const slug = (await params).entry;
+	const entry = getEntry(slug);
 	// const description = params.entry.text[0];
 	return {
 		title: `${entry?.title} - Kohlibri`,
@@ -23,7 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Props) {
-	const entry = getEntry(params.entry);
+	const slug = (await params).entry;
+	const entry = getEntry(slug);
 
 	if (!entry) notFound();
 
@@ -34,7 +36,7 @@ export default async function Page({ params }: Props) {
 
 	return (
 		<>
-			<h1 className="fly-right-fade entry-title relative mb-4 mt-4 w-max max-w-xs sm:max-w-xl text-center text-2xl font-semibold leading-[3rem] sm:mt-20 sm:text-[2.5rem]">
+			<h1 className="fly-right-fade entry-title relative mb-4 mt-4 w-max max-w-xs sm:max-w-xl text-center text-2xl font-semibold leading-12 sm:mt-20 sm:text-[2.5rem]">
 				{entry.title}
 			</h1>
 			<EntryPage text={formattedText} />

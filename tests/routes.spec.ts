@@ -18,7 +18,7 @@ test('slugs should replace space with dash', () => {
 		const title = entry?.browseTitle || entry?.title;
 		expect(title).toBeTruthy();
 
-		const expectedSlug = title?.replaceAll(' ', '-');
+		const expectedSlug = title?.replaceAll(' ', '-').replaceAll(':', '');
 		expect(slug).toBe(expectedSlug);
 	});
 });

@@ -11,6 +11,7 @@
     "algolia": "node ./scripts/algolia-data.js"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "algoliasearch": "^5.35.0",
     "next": "^15.5.0",
     "react": "^19.1.1",
@@ -25,7 +26,6 @@
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
-    "autoprefixer": "^10.4.20",
     "dotenv": "^17.2.1",
     "eslint": "^9.33.0",
     "eslint-config-next": "^15.5.0",

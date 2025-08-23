@@ -14,7 +14,7 @@ export function useIntersectionObserver(observerOptions: IntersectionObserverIni
 		}, observerOptions)
 	);
 
-	const useObserve = (ref: RefObject<Element>, callback: IntersectionObserverCallback) => {
+	const useObserve = (ref: RefObject<Element | null>, callback: IntersectionObserverCallback) => {
 		useEffect(() => {
 			const currentRef = ref.current;
 			if (!currentRef) return;

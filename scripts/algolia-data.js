@@ -72,8 +72,7 @@ const entries = getAllEntries().map((entry) => {
 });
 
 client
-	.initIndex('signalis')
-	.replaceAllObjects(entries, { safe: true, autoGenerateObjectIDIfNotExist: true })
+	.replaceAllObjects('signalis', entries, { safe: true, autoGenerateObjectIDIfNotExist: true })
 	.then(() => {
 		console.log('Replacement Success');
 	})

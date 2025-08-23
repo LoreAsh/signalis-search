@@ -52,7 +52,7 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 						return !currentState;
 					});
 				}}
-				className="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base font-medium hover:bg-off-white hover:text-black focus:relative focus:bg-off-white focus:text-black focus:outline focus:outline-4 focus:outline-offset-2 focus:outline-off-white focus:z-30 sm:text-norm"
+				className="accordion-button z-0 mb-1 w-full bg-primary-red py-0.5 text-base leading-[1.5rem] font-medium hover:bg-off-white hover:text-black focus:relative focus:bg-off-white focus:text-black focus:outline focus:outline-4 focus:outline-offset-2 focus:outline-off-white focus:z-30 sm:text-norm"
 			>
 				{part}
 			</button>
@@ -69,13 +69,13 @@ export default function Accordion({ part, entries, index }: ItemsProps) {
 								}}
 								href={`/entries/${entry.slug}`}
 								key={entry.title}
-								className={`${open ? 'accordion-item' : ''} flex flex-col px-4 py-1 text-base hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm`}
+								className={`${open ? 'accordion-item' : ''} flex flex-col px-4 py-1 text-base leading-[1.5rem] hover:bg-primary-red focus:z-10 focus:bg-primary-red focus:outline-none focus:outline sm:flex-row sm:text-norm`}
 							>
 								<div title={entry.title}>
 									{entry.title.substring(0, 30)}
 									{entry.title.length >= 30 ? '...' : ''}
 								</div>
-								<div className="text-sm font-light text-white/80 sm:ml-auto sm:text-base">
+								<div className="text-sm leading-[1.25rem] sm:leading-[1.5rem] font-light text-white/80 sm:ml-auto sm:text-base">
 									{leftAngleBracket}
 									{entry.place}
 									{rightAngleBracket}

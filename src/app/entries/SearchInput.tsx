@@ -1,6 +1,6 @@
 'use client';
 
-import algoliasearch from 'algoliasearch/lite';
+import { liteClient as algoliasearch } from 'algoliasearch/lite';
 import { useRef, useEffect, useState, MutableRefObject, ReactNode, RefObject } from 'react';
 import { useInfiniteHits, InstantSearch, SearchBox, Snippet, useInstantSearch } from 'react-instantsearch';
 import type { SearchBoxProps, UseInfiniteHitsProps } from 'react-instantsearch';
@@ -16,7 +16,7 @@ function Hit({
 	useObserve,
 }: {
 	hit: any;
-	useObserve: (ref: RefObject<Element>, callback: IntersectionObserverCallback) => void;
+	useObserve: (ref: RefObject<Element | null>, callback: IntersectionObserverCallback) => void;
 }) {
 	const [isVisible, setIsVisible] = useState(false);
 	const ref = useRef<HTMLLIElement>(null);
@@ -33,7 +33,7 @@ function Hit({
 		<li key={hit.objectID} ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
 				href={`/entries/${hit.slug}`}
-				className="block border border-t-[18px] border-primary-orange px-3 py-3 sm:px-6 sm:py-4 focus:outline focus:outline-primary-orange focus:outline-offset-2 focus:outline-4"
+				className="block border border-t-18 border-primary-orange px-3 py-3 sm:px-6 sm:py-4 focus:outline focus:outline-primary-orange focus:outline-offset-2 focus:outline-4"
 			>
 				<h3 className="mb-2 text-xl font-semibold text-primary-orange sm:mb-4 sm:text-2xl">
 					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
