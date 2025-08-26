@@ -1,4 +1,4 @@
-const algoliasearch = require('algoliasearch/lite');
+const algoliasearch = require('algoliasearch/lite').liteClient;
 require('dotenv').config();
 
 const part1 = require('../src/lib/transcriptions/Part-1-The Penrose.json');
@@ -79,4 +79,3 @@ client
 	.catch((err) => {
 		console.log(err);
 	});
-	;
