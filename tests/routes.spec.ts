@@ -1,5 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { getAllEntrySlugs, getEntry } from '@/lib/transcriptions';
+import { getEntry } from '@/lib/transcriptions';
+import { memories } from '@/lib/transcriptions/index';
+
+const slugs = memories.map((memory) => memory.slug);
 
 test('should navigate to browse page', async ({ page }) => {
 	await page.goto('/');
@@ -10,7 +13,6 @@ test('should navigate to browse page', async ({ page }) => {
 });
 
 test('slugs should replace space with dash', () => {
-	const slugs = getAllEntrySlugs();
 	slugs.forEach((slug) => {
 		const entry = getEntry(slug);
 		expect(entry).toBeTruthy();
@@ -29,17 +31,16 @@ test('browse should have all entries', async ({ page }) => {
 	const accordionLinks = await page.locator('ul li a').all();
 	const hrefs = await Promise.all(accordionLinks.map((link) => link.getAttribute('href')));
 
-	const slugs = getAllEntrySlugs().map((slug) => `/entries/${slug}`);
-	expect(slugs.length).toBe(hrefs.length);
+	const adjustedSlugs = slugs.map((slug) => `/entries/${slug}`);
+	expect(adjustedSlugs.length).toBe(hrefs.length);
 
 	hrefs.forEach((href) => {
-		expect(slugs).toContain(href);
+		expect(adjustedSlugs).toContain(href);
 	});
 });
 
 test('all entries should be found', async ({ page }) => {
 	test.setTimeout(180000);
-	const slugs = getAllEntrySlugs();
 	for (const slug of slugs) {
 		await page.goto(`/entries/${slug}`);
 		const title = await page.locator('h1').textContent();
