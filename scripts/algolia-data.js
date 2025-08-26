@@ -1,4 +1,4 @@
-const algoliasearch = require('algoliasearch');
+const algoliasearch = require('algoliasearch/lite');
 require('dotenv').config();
 
 const part1 = require('../src/lib/transcriptions/Part-1-The Penrose.json');
