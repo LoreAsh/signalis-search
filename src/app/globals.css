@@ -18,6 +18,10 @@ body {
 main {
 	flex: 1;
 }
+button:not(:disabled),
+[role='button']:not(:disabled) {
+	cursor: pointer;
+}
 .bg {
 	color: white;
 	position: fixed;
