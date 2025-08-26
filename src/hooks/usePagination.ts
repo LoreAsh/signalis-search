@@ -2,8 +2,8 @@ import { useCallback, useMemo, useState } from 'react';
 
 // pages are zero based index
 // totalPages is one based index
-export function usePagination(totalPages: number) {
-	const [page, setPage] = useState(0);
+export function usePagination(totalPages: number, initialPage = 0) {
+	const [page, setPage] = useState(initialPage);
 
 	const hasNext = useMemo(() => page < totalPages - 1, [page, totalPages]);
 	const hasPrev = useMemo(() => page > 0, [page]);

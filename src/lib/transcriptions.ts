@@ -1,9 +1,5 @@
 import { transcriptions, memories, subChapters, chapters } from './transcriptions/index';
 
-export function getAllEntrySlugs(): string[] {
-	return memories.map((memory) => memory.slug);
-}
-
 export function getEntry(slug: string) {
 	slug = decodeURIComponent(slug);
 	const entry = memories.find((memory) => memory.slug === slug);
