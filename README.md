@@ -6,4 +6,4 @@ This is an unofficial, fan-made site for searching memories in [Signalis](https:
 
 ## Technology
 
-This site was built using Nextjs, Tailwind CSS, and Typescript. I used Postgres as a database and Algolia as the search engine.
+This site was built using Nextjs, Tailwind CSS, and Typescript. Algolia is used as the search engine.
