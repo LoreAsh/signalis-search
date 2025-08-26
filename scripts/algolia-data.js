@@ -1,4 +1,4 @@
-const algoliasearch = require('algoliasearch/lite').liteClient;
+const algoliasearch = require('@algolia/client-search').searchClient;
 require('dotenv').config();
 
 const part1 = require('../src/lib/transcriptions/Part-1-The Penrose.json');
@@ -72,7 +72,7 @@ const entries = getAllEntries().map((entry) => {
 });
 
 client
-	.replaceAllObjects('signalis', entries, { safe: true, autoGenerateObjectIDIfNotExist: true })
+	.replaceAllObjects({ indexName: 'signalis', objects: entries, safe: true, autoGenerateObjectIDIfNotExist: true })
 	.then(() => {
 		console.log('Replacement Success');
 	})
