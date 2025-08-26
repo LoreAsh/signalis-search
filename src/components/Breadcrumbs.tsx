@@ -12,32 +12,39 @@ export default function Breadcrumbs() {
 	if (pathnames[pathnames.length - 1] !== '') {
 		home = true;
 	} else {
-		pathnames.splice(pathnames.length - 1, 1);
+		pathnames.splice(0, 1);
 	}
 
-  if (pathnames.length === 0) {
-    return (<></>)
-  }
-  const culledPathnames = pathnames.map((name) => {
+	if (pathnames.length === 0) {
+		return <></>;
+	}
+	const culledPathnames = pathnames.map((name) => {
 		name = decodeURIComponent(name);
-    if (name.length > 10) {
-      return name.slice(0, 10) + '...';
-    }
-    return name;
-  })
+		if (name.length > 10) {
+			return name.slice(0, 10) + '...';
+		}
+		return name;
+	});
+
+	if (culledPathnames.length >= 3) {
+		culledPathnames.splice(culledPathnames.length - 1, 1);
+	}
 
 	return (
 		<ol className="w-full m-auto flex max-w-4xl p-4 pt-4 gap-3 text-sm sm:text-base sm:pt-10" aria-label="Breadcrumb">
 			{home ? (
-				<li key='home'>
-					<Link href="/" className="text-primary-blue hover:underline hover:text-primary-blue-hover focus:text-primary-blue-hover focus:underline">
+				<li key="home">
+					<Link
+						href="/"
+						className="text-primary-blue hover:underline hover:text-primary-blue-hover focus:text-primary-blue-hover focus:underline"
+					>
 						Home
 					</Link>
 				</li>
 			) : null}
 			{culledPathnames.map((name, index) => {
 				return (
-					<li key={name} className='flex flex-row'>
+					<li key={name} className="flex flex-row">
 						<span className="mr-3 inline-block select-none font-light text-white/80" aria-hidden="true">
 							&gt;
 						</span>

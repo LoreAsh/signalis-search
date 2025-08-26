@@ -2,18 +2,28 @@
 
 import { useKeyDown } from '@/hooks';
 import { usePagination } from '@/hooks';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const leftAngleBracket = '\u003C';
 const rightAngleBracket = '\u003E';
 
-export default function EntryPage({ text }: { text: { __html: string }[] }) {
-	const totalPages = text.length;
+type Props = {
+	text: { __html: string }[];
+	params: { entry: string; page: string };
+};
 
-	const { page, next, prev, hasNext, hasPrev } = usePagination(totalPages);
+export default function EntryPage({ text, params }: Props) {
+	const totalPages = text.length; // one based index
+
+	// page is zero based index
+	const { page, next, prev, hasNext, hasPrev } = usePagination(totalPages, Number(params.page) - 1);
 	const [direction, setDirection] = useState<'left' | 'right'>('right');
 	const ref = useRef<HTMLParagraphElement>(null);
 	useKeyDown(keyHandler);
+
+	useEffect(() => {
+		history.replaceState(null, '', `/entries/${params.entry}/${page + 1}`);
+	}, [page, params.entry]);
 
 	function pageChangeHandler(input: 'prev' | 'next') {
 		const directionInput = input === 'prev' ? 'left' : 'right';

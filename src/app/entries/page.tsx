@@ -5,7 +5,7 @@ import { getBrowseEntries } from '@/lib/transcriptions';
 export const metadata = {
 	title: 'Entries - Kohlibri',
 	description:
-		'Kohlibri is a search engine for Signalis. This is a fan made website to search through memories in Signalis. ',
+		'Kohlibri is a search engine for Signalis. This is a fan made website to search through memories in Signalis.',
 };
 
 export default function Page() {
