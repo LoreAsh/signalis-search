@@ -36,7 +36,7 @@ export default function Dialog() {
 			<dialog
 				ref={ref}
 				onClick={closeDialog}
-				className="p-2 max-w-5xl w-full mt-2 sm:mt-16 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
+				className="p-2 mx-auto max-w-5xl w-full mt-2 sm:mt-16 bg-transparent backdrop:cursor-pointer backdrop:bg-zinc-950/90"
 			>
 				<SearchInput closeHandler={closeDialog} />
 			</dialog>

@@ -33,7 +33,7 @@ function Hit({
 		<li key={hit.objectID} ref={ref} className={`ais-InfiniteHits-item ${isVisible ? 'fly-up-fade' : 'invisible'}`}>
 			<a
 				href={`/entries/${hit.slug}`}
-				className="block border border-t-18 border-primary-orange px-3 py-3 sm:px-6 sm:py-4 focus:outline focus:outline-primary-orange focus:outline-offset-2 focus:outline-4"
+				className="block border border-t-18 border-primary-orange px-3 py-3 sm:px-6 sm:py-4 focus:outline-primary-orange focus:outline-offset-2 focus:outline-4"
 			>
 				<h3 className="mb-2 text-xl font-semibold text-primary-orange sm:mb-4 sm:text-2xl">
 					<Snippet hit={hit} attribute="title" classNames={{ highlighted: highlightedClasses }} />
@@ -116,7 +116,7 @@ export default function SearchInput(props: { closeHandler: () => void }) {
 					<SearchBox
 						classNames={{
 							input:
-								'bg-black/80 border border-gray-500 px-4 h-12 w-full rounded-sm text-base sm:text-norm focus:outline focus:outline-primary-orange focus:outline-4',
+								'bg-black/80 border border-gray-500 px-4 h-12 w-full rounded-xs text-base sm:text-norm focus:-outline-offset-2 focus:outline-primary-orange focus:outline-4',
 							root: 'w-full mb-12 max-w-xl',
 							form: 'relative',
 							submit: 'hidden',
