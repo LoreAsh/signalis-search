@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		},
 		{
 			pattern: '$',
-			replacement: '█',
+			replacement: '',
 		},
 	];
 
